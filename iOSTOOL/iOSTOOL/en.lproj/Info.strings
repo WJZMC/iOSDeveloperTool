@@ -1,0 +1,10 @@
+/* 
+  Info.strings
+  iOSTool
+
+  Created by jack wei on 2018/7/30.
+  Copyright © 2018年 jack wei. All rights reserved.
+*/
+CFBundleDisplayName = "tool";
+UNLocalFontName_nomal ="HelveticaNeue-Regular";
+UNLocalFontName_blod ="HelveticaNeue-Medium";
