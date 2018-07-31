@@ -7,9 +7,7 @@ pod 'MJRefresh'
 pod 'SVProgressHUD'
 pod 'TPKeyboardAvoiding'
 pod 'MJExtension'
-#pod 'HMSegmentedControl'
-pod 'YYCache'
-pod 'YYText'
+pod 'HMSegmentedControl'
 pod 'MBProgressHUD'
 pod 'STPickerView'
 pod 'SDCycleScrollView'
@@ -18,17 +16,25 @@ pod 'UITableView+FDTemplateLayoutCell'
 pod 'Masonry'
 pod 'RSKImageCropper'
 pod 'TZImagePickerController'
-
-
-#pod 'TXLiteAVSDK_Smart', :podspec => 'http://pod-1252463788.cosgz.myqcloud.com/liteavsdkspec/TXLiteAVSDK_Smart.podspec'
-
 pod 'FMDB'
 pod 'PleaseBaoMe'
-pod "Qiniu"
+pod 'Qiniu'
 pod 'ZFPlayer'
 pod 'ZFDownload'
 
+pod 'YYModel' # — 高性能的 iOS JSON 模型框架。https://github.com/ibireme/YYImage
+pod 'YYCache' # — 高性能的 iOS 缓存框架。https://github.com/ibireme/YYCache
+pod 'YYImage' # — 功能强大的 iOS 图像框架。https://github.com/ibireme/YYImage
+pod 'YYWebImage' # — 高性能的 iOS 异步图像加载框架。https://github.com/ibireme/YYWebImage
+pod 'YYText' # — 功能强大的 iOS 富文本框架。https://github.com/ibireme/YYText
+pod 'YYKeyboardManager' # — iOS 键盘监听管理工具。https://github.com/ibireme/YYKeyboardManager
+pod 'YYDispatchQueuePool' # — iOS 全局并发队列管理工具。https://github.com/ibireme/YYDispatchQueuePool
+pod 'YYAsyncLayer' # — iOS 异步绘制与显示的工具。https://github.com/ibireme/YYAsyncLayer
+pod 'YYCategories' # — 功能丰富的 Category 类型工具库。https://github.com/ibireme/YYCategories
 
+
+
+#pod 'TXLiteAVSDK_Smart', :podspec => 'http://pod-1252463788.cosgz.myqcloud.com/liteavsdkspec/TXLiteAVSDK_Smart.podspec'
 
 pod 'RongCloudIM/IMLib'
 pod 'RongCloudIM/IMKit'

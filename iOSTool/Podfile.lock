@@ -14,6 +14,24 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
+  - HappyDNS (0.3.14)
+  - HMSegmentedControl (1.5.5)
   - JCore (1.2.0)
   - JPush (3.0.9):
     - JCore (~> 1.2.0)
@@ -21,9 +39,14 @@ PODS:
   - MBProgressHUD (1.1.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.3)
+  - PleaseBaoMe (1.1):
+    - FMDB (~> 2)
   - PPNetworkHelper (0.8.1):
     - AFNetworking (~> 3.2.0)
     - YYCache (~> 1.0.4)
+  - Qiniu (7.2.4):
+    - HappyDNS (~> 0.3)
+  - Reachability (3.2)
   - RongCloudIM/IMKit (2.9.2):
     - RongCloudIM/IMLib
   - RongCloudIM/IMLib (2.9.2)
@@ -42,18 +65,40 @@ PODS:
     - UMCCommon
   - UMCCommon (1.5.2)
   - UMCSecurityPlugins (1.0.6)
+  - YYAsyncLayer (1.0)
   - YYCache (1.0.4)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYDispatchQueuePool (1.0)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYKeyboardManager (1.0.1)
+  - YYModel (1.0.4)
   - YYText (1.0.7)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+  - ZFDownload (1.0.2):
+    - ASIHTTPRequest
+  - ZFPlayer (3.1.0):
+    - ZFPlayer/Core (= 3.1.0)
+  - ZFPlayer/Core (3.1.0)
   - ZYCornerRadius (1.0.2)
 
 DEPENDENCIES:
   - AFNetworking
+  - FMDB
+  - HMSegmentedControl
   - JPush
   - Masonry
   - MBProgressHUD
   - MJExtension
   - MJRefresh
+  - PleaseBaoMe
   - PPNetworkHelper (from `https://github.com/jkpang/PPNetworkHelper.git`)
+  - Qiniu
   - RongCloudIM/IMKit
   - RongCloudIM/IMLib
   - RSKImageCropper
@@ -67,8 +112,17 @@ DEPENDENCIES:
   - UMCAnalytics
   - UMCCommon
   - UMCSecurityPlugins
+  - YYAsyncLayer
   - YYCache
+  - YYCategories
+  - YYDispatchQueuePool
+  - YYImage
+  - YYKeyboardManager
+  - YYModel
   - YYText
+  - YYWebImage
+  - ZFDownload
+  - ZFPlayer
   - ZYCornerRadius (~> 1.0.2)
 
 EXTERNAL SOURCES:
@@ -82,13 +136,20 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  HappyDNS: dc6a164ee81979093123c241c6353bcf0218add6
+  HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
   JCore: b52e3dd73625eec70afd1244bb9c41038aa06087
   JPush: 48041e8c5ad2ef9b48709eb0888af9640b36e9b0
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  PleaseBaoMe: dd877428a7c8ce78ab2ab837d37a44a6f1aa73ca
   PPNetworkHelper: e893191a73665e9c496c2887fd5ceece9e930bb8
+  Qiniu: 65384bca1cdb0480a68d9b9b8f54db53418c0355
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   RongCloudIM: fdfa42630aec09c92d6054753ea3e7a7db75bec2
   RSKImageCropper: 0d0c6d8525a2381f03fde32a47c6703817a2feed
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
@@ -101,10 +162,19 @@ SPEC CHECKSUMS:
   UMCAnalytics: 4667788559a72f2fa5077117d1b8802a3b6eb6bb
   UMCCommon: 4392868ac47ff1b101663106bb114ba616fabbad
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYDispatchQueuePool: 3dfb2274bcc74207688dde8ac6f7bdd46871dd7b
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYKeyboardManager: ff53d2e80d1808567a7f004028bd200d9469a89f
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+  ZFDownload: a52f94ebb080833b8a8ceb19a409f2941343fe7f
+  ZFPlayer: 1eee97c20cd7a066fc3c8f37b6d2c4f726113c0b
   ZYCornerRadius: f0af817be7805b5c63d793042ca7a03f81e14069
 
-PODFILE CHECKSUM: 7dbfaad7784d87b431b9feaa172bb8c33df47bd3
+PODFILE CHECKSUM: 40448f284aae567eae0f11b0fe586a065fc161a6
 
 COCOAPODS: 1.4.0
