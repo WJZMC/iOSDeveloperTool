@@ -1,7 +1,8 @@
 # 简介    
 
   这个项目是对iOS开发的总结，项目中列出了项目必备工具的集合，包含：请求的封装、加密、错误处理、逻辑解耦、业务拆分、数据解析、以及一些常用工具类的封装和一些开发过程中常见问题的解决方案
-#常用第三方工具库
+  
+# 常用第三方工具库     
 
 ```
 pod 'AFNetworking'
@@ -28,7 +29,7 @@ pod "Qiniu"
 pod 'ZFPlayer'
 pod 'ZFDownload'
 ```
-#常见分类、自定义工具类
+# 常见分类、自定义工具类   
 
 基本满足开发需求的
 >tool目录
@@ -45,10 +46,10 @@ pod 'ZFDownload'
 
 
 
-#开发过程中的常见问题及解决方法
+# 开发过程中的常见问题及解决方法   
 
-##1、tableview性能优化
-###出现问题的原因：
+## 1、tableview性能优化     
+### 出现问题的原因：   
 1、频繁创建控件  
 2、cell结构复杂，过多使用AutoLayout，大量布局运算使CPU过载    
 3、 控件大量重叠并且大量透明通道、圆角、阴影、遮罩，clip或mask会导致offscreen rendering 使GPU过载
@@ -65,10 +66,10 @@ pod 'ZFDownload'
     使用CGContext在drawRect :方法中绘制大部分情况下会导致离屏渲染，甚至仅仅是一个空的实现
 ```
                     
-###优化目的：
+### 优化目的：    
 
    平衡CPU和GPU的压力
-###解决方法：
+### 解决方法：   
    1、运用cell重用机制   
    2、减少AutoLayout使用，在model中提前计算好布局，避免加载过程中计算  
    3、在视图复杂的cell中，重载drawRect:方法，直接在主线程中绘制视图，来将部分GPU的压力转给CPU   
@@ -97,18 +98,18 @@ pod 'ZFDownload'
     使用代码手动生成圆角Image设置到要显示的View上，利用UIBezierPath（CoreGraphics框架）画出来圆角图片
      
    ```
-##2、weak，asign ，strong ，copy 等用法区别
+## 2、weak，asign ，strong ，copy 等用法区别  
 
-##3、内存管理机制
+## 3、内存管理机制  
 
-##4、深拷贝浅拷贝
-##5、kvo防止重复添加
-##6、强引用弱引用循环信用等所有相关
-##7、runtime，run loop多线程相关问题高级用法
-##8、tcp，udp
-##9、socket 
-##10、https http
-##11、算法树形结构查找
-##12、sdwebimage 实现流程，
-##13、存储模式，各种目录用法
-##14、sdk开发规范设计注意
+## 4、深拷贝浅拷贝  
+## 5、kvo防止重复添加      
+## 6、强引用弱引用循环信用等所有相关             
+## 7、runtime，run loop多线程相关问题高级用法   
+## 8、tcp，udp       
+## 9、socket       
+## 10、https http     
+## 11、算法树形结构查找      
+## 12、sdwebimage 实现流程，      
+## 13、存储模式，各种目录用法     
+## 14、sdk开发规范设计注意     
