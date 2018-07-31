@@ -1,5 +1,5 @@
 platform:ios,'8.0'
-target "iOSTool"do
+target "iOSTool" do
 pod 'AFNetworking'
 pod 'PPNetworkHelper',:git => 'https://github.com/jkpang/PPNetworkHelper.git'
 pod 'SDWebImage'
@@ -18,13 +18,20 @@ pod 'UITableView+FDTemplateLayoutCell'
 pod 'Masonry'
 pod 'RSKImageCropper'
 pod 'TZImagePickerController'
-pod 'RongCloudIM/IMLib'
-#, '~> 2.8.3'
-pod 'RongCloudIM/IMKit'
-#, '~> 2.8.3'
+
 
 #pod 'TXLiteAVSDK_Smart', :podspec => 'http://pod-1252463788.cosgz.myqcloud.com/liteavsdkspec/TXLiteAVSDK_Smart.podspec'
 
+pod 'FMDB'
+pod 'PleaseBaoMe'
+pod "Qiniu"
+pod 'ZFPlayer'
+pod 'ZFDownload'
+
+
+
+pod 'RongCloudIM/IMLib'
+pod 'RongCloudIM/IMKit'
 #pod 'UMengAnalytics'
 pod 'UMCAnalytics'
 pod 'UMCCommon'
