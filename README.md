@@ -1,6 +1,8 @@
-#简介
+# 简介    
+
   这个项目是对iOS开发的总结，项目中列出了项目必备工具的集合，包含：请求的封装、加密、错误处理、逻辑解耦、业务拆分、数据解析、以及一些常用工具类的封装和一些开发过程中常见问题的解决方案
 #常用第三方工具库
+
 ```
 pod 'AFNetworking'
 pod 'PPNetworkHelper',:git => 'https://github.com/jkpang/PPNetworkHelper.git'
@@ -27,6 +29,7 @@ pod 'ZFPlayer'
 pod 'ZFDownload'
 ```
 #常见分类、自定义工具类
+
 基本满足开发需求的
 >tool目录
 >>文件管理： 文件操作
