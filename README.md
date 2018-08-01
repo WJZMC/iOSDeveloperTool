@@ -37,7 +37,6 @@ pod 'YYCategories' # — 功能丰富的 Category 类型工具库。https://gith
 ```
 # 常见分类、自定义工具类   
 
-基本满足开发需求的
 >tool目录
 >>文件管理： 文件操作
 
@@ -82,7 +81,7 @@ pod 'YYCategories' # — 功能丰富的 Category 类型工具库。https://gith
    4、减少offscreen rendering相关操作的使用    
    
    ```
- (1)圆角优化
+1、圆角优化
     UIBezierPath和Core Graphics或者CAShapeLayer配合来做等操作 
     
 	CAShapeLayer继承于CALayer,可以使用CALayer的所有属性值；  
@@ -91,7 +90,7 @@ pod 'YYCategories' # — 功能丰富的 Category 类型工具库。https://gith
 	CAShapeLayer动画渲染直接提交到手机的GPU当中，相较于view的drawRect方法使用CPU渲染而言，其效率极高，能大大优化内存使用情况。
                 
 	总的来说就是用CAShapeLayer的内存消耗少，渲染速度快，建议使用
-（2）其他优化
+2、其他优化
                   
     当我们需要圆角效果时，可以使用一张中间透明图片蒙上去
     使用ShadowPath指定layer阴影效果路径
@@ -157,28 +156,24 @@ block属性为什么需要用copy来修饰？
 
 ***_ _ block与_ _ weak的区别***
 
->>_ _ block：在ARC和MRC下都可用，可修饰对象，也可以修饰基本数据类型。
-
->>_ _ block：对象可以在block被重新赋值，_ _ weak不可以。
-
->>_ _ weak：只在ARC中使用，只能修饰对象，不能修饰基本数据类型（int、bool）。
-
->>>
-同时，在ARC下，要避免block出现循环引用，经常会通过以下两种方法任选一种：
->>>>***_ _ weak***：_ _ weak typedof(self) weakSelf = self;实际定义了一个弱引用性质的替身.这个一般在使用block时会用到,因为block会copy它内部的变量,使用_ _ weak性质的self替代self,可以切断block对self的引用.避免循环引用.
+>_ _ block：在ARC和MRC下都可用，可修饰对象，也可以修饰基本数据类型。   
+>_ _ block：对象可以在block被重新赋值，_ _ weak不可以。          
+>_ _ weak：只在ARC中使用，只能修饰对象，不能修饰基本数据类型（int、bool）。                   
+>>同时，在ARC下，要避免block出现循环引用，经常会通过以下两种方法任选一种：        
+>>>***_ _ weak***：_ _ weak typedof(self) weakSelf = self;实际定义了一个弱引用性质的替身.这个一般在使用block时会用到,因为block会copy它内部的变量,使用_ _ weak性质的self替代self,可以切断block对self的引用.避免循环引用.              
 ```
 typeof()是根据括号里的变量,自动识别变量类型并返回该类型
 ```
 
->>>>***重写block的set方法，定义弱引用***
->>>>
-	```
+>>>***重写block的set方法，定义弱引用***  
+            
+```
 	-(void)setBlock:(Block)block                       
 	{
- 	   _ _ weak Block blockT =addCell;        
+ 	   _ _weak Block blockT =addCell;        
  	   _block = blockT;
 	}
-	```
+```
 ***不相互持有的block不需要weak self***
 
 
@@ -201,17 +196,14 @@ typeof()是根据括号里的变量,自动识别变量类型并返回该类型
 
    >***release***：release是一个实例方法，同样只能由对象调用，它的作用是使对象的内存空间的引用计数减1，若引用计数变为0则系统会立刻释放掉这块内存。如果引用计数为0的基础上再调用release，便会造成过度释放，使内存崩溃；
 
-   >***autorelease***：autorelease是一个实例方法，同样只能由对象调用，它的作用于release类似，但不是立刻减1，相当于一个延迟的release，通常用于方法返回值的释放，如便利构造器。autorelease会在程序走出自动释放池时执行，通常系统会自动生成自动释放池（即使是MRC下），也可以自己设定自动释放池，
-   >>如：
-   
+   >***autorelease***：autorelease是一个实例方法，同样只能由对象调用，它的作用于release类似，但不是立刻减1，相当于一个延迟的release，通常用于方法返回值的释放，如便利构造器。autorelease会在程序走出自动释放池时执行，通常系统会自动生成自动释放池（即使是MRC下），也可以自己设定自动释放池，                
    >>   ``` 
         @autoreleasepool{
   			 obj= [[NSObject alloc]init];
  			[obj autorelease];
         }
-        ```
-        
-   >>当程序走出“}”时obj的引用计数就会减1.
+        当程序走出“}”时obj的引用计数就会减1.
+        ```    
 
    >除了以上所述的关键字，还有一些方法会引起引用计数的变化，如UI中父视图添加、移除子视图，导航控制器或视图控制器推出新的视图控制器以及返回，容器类（数组、字典和集合）添加和移除元素。
 
