@@ -18,6 +18,55 @@
         loop多线程相关问题高级用法](#runtimerun-loop多线程相关问题高级用法)
         -   [RunLoop:](#runloop)
         -   [runtime](#runtime)
+    -   [7、存储模式，各种目录用法](#存储模式各种目录用法)
+    -   [8、sdwebimage 实现流程](#sdwebimage-实现流程)
+    -   [9、https、 http、 tcp、udp 、socket
+        等应用](#https-http-tcpudp-socket-等应用)
+        -   [前言](#前言)
+        -   [TCP、UDP、HTTP、Socket](#tcpudphttpsocket)
+        -   [HTTP 、HTTPS](#http-https)
+        -   [Socket 、WebSocket](#socket-websocket)
+        -   [TCP 、UDP](#tcp-udp)
+    -   [10、sdk开发规范、设计注意](#sdk开发规范设计注意)
+        -   [1、Sdk架构设计-模块化、组件化、插件化](#sdk架构设计-模块化组件化插件化)
+        -   [2、Sdk接口Api设计统一、简单](#sdk接口api设计统一简单)
+        -   [3、Sdk资源内容组成设计-接入和维护更新便利性](#sdk资源内容组成设计-接入和维护更新便利性)
+        -   [4、Sdk接口回调设计](#sdk接口回调设计)
+        -   [5、Sdk日志设计](#sdk日志设计)
+        -   [6、Sdk运行稳定性捕获自身异常](#sdk运行稳定性捕获自身异常)
+        -   [7、Sdk自身内容安全性](#sdk自身内容安全性)
+        -   [8、Sdk性能高效](#sdk性能高效)
+        -   [9、细节事项](#细节事项)
+    -   [11、七大查找算法](#七大查找算法)
+        -   [前言](#前言-1)
+        -   [1. 顺序查找](#顺序查找)
+        -   [2. 二分查找](#二分查找)
+        -   [3. 插值查找](#插值查找)
+        -   [4. 斐波那契查找](#斐波那契查找)
+        -   [5. 树表查找](#树表查找)
+        -   [6. 分块查找](#分块查找)
+        -   [7. 哈希查找](#哈希查找)
+
+-   [简介](#简介)
+-   [常用第三方工具库](#常用第三方工具库)
+-   [常见分类、自定义工具类](#常见分类自定义工具类)
+-   [开发过程中的常见问题及解决方法](#开发过程中的常见问题及解决方法)
+    -   [1、tableview性能优化](#tableview性能优化)
+        -   [出现问题的原因：](#出现问题的原因)
+        -   [优化目的：](#优化目的)
+        -   [检测工具：](#检测工具)
+    -   [2、property 、weak，asign ，strong ，copy
+        等用法区别、以及强引用弱引用循环引用等所有相关](#property-weakasign-strong-copy-等用法区别以及强引用弱引用循环引用等所有相关)
+    -   [3、内存管理机制](#内存管理机制)
+    -   [4、深拷贝浅拷贝应用](#深拷贝浅拷贝应用)
+        -   [概念](#概念)
+        -   [用法](#用法)
+        -   [property中的copy属性](#property中的copy属性)
+    -   [5、kvo防止重复添加](#kvo防止重复添加)
+    -   [6、runtime，run
+        loop多线程相关问题高级用法](#runtimerun-loop多线程相关问题高级用法)
+        -   [RunLoop:](#runloop)
+        -   [runtime](#runtime)
             -   [概念](#概念-1)
             -   [作用](#作用)
     -   [7、存储模式，各种目录用法](#存储模式各种目录用法)
@@ -307,7 +356,6 @@ mutableCopy,那么就会发生异常。但是默认的ios类并没有遵守这�
 那么就必须遵守NSCopying,并且实现 copyWithZone:
 方法，如果想自定义一下mutableCopy
 那么就必须遵守NSMutableCopying,并且实现 mutableCopyWithZone: 方法。如：
-
 
     @interface MyObj : NSObject<NSCopying,NSMutableCopying>
     {
