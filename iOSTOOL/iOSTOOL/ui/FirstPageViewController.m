@@ -7,20 +7,63 @@
 //
 
 #import "FirstPageViewController.h"
-#import "SecViewController.h"
-
+#import "MVPViewController.h"
+#import "MVVMViewController.h"
 @interface FirstPageViewController ()
-
+@property(nonatomic,strong) UIButton *MVP;
+@property(nonatomic,strong) UIButton *MVVM;
 @end
 
 @implementation FirstPageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title=@"首页";
 
+    [self.view addSubview:self.MVP];
+    [self.view addSubview:self.MVVM];
+    
+    [self.MVP mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(kTransformP(100), kTransformP(100)));
+        make.top.equalTo(self.view.mas_top).with.offset(100);
+        make.centerX.equalTo(self.view);
+    }];
+    
+    [self.MVVM mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(kTransformP(100), kTransformP(100)));
+        make.top.equalTo(self.view.mas_top).with.offset(300);
+        make.centerX.equalTo(self.view);
+    }];
 }
-
+-(UIButton*)MVP
+{
+    if (!_MVP) {
+        _MVP=[[UIButton alloc]init];
+        [_MVP setTitle:@"MVP" forState:UIControlStateNormal];
+        [_MVP setTitleColor:kColor(@"000000") forState:UIControlStateNormal];
+        [_MVP addTarget:self action:@selector(mvpAction:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _MVP;
+}
+-(UIButton*)MVVM
+{
+    if (!_MVVM) {
+        _MVVM=[[UIButton alloc]init];
+        [_MVVM setTitle:@"MVVM" forState:UIControlStateNormal];
+        [_MVVM setTitleColor:kColor(@"000000") forState:UIControlStateNormal];
+        [_MVVM addTarget:self action:@selector(mvpAction:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _MVVM;
+}
+-(void)mvpAction:(UIButton*)sender
+{
+    MVPViewController *mvp=[[MVPViewController alloc]init];
+    [self.navigationController pushViewController:mvp animated:YES];
+}
+-(void)mvvmAction:(UIButton*)sender
+{
+    MVVMViewController *mvvm=[[MVVMViewController alloc]init];
+    [self.navigationController pushViewController:mvvm animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

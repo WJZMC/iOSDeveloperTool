@@ -33,7 +33,6 @@
 		6F600483210EC737009C4F03 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600482210EC737009C4F03 /* BaseViewController.m */; };
 		6F600486210EC74E009C4F03 /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600485210EC74E009C4F03 /* FirstPageViewController.m */; };
 		6F600489210EC75D009C4F03 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600488210EC75D009C4F03 /* UserViewController.m */; };
-		6F60048C210ED043009C4F03 /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F60048B210ED043009C4F03 /* SecViewController.m */; };
 		6F6004F0210ED322009C4F03 /* TDFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F60048D210ED320009C4F03 /* TDFileTool.m */; };
 		6F6004F1210ED322009C4F03 /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600490210ED321009C4F03 /* YZDisplayTitleLabel.m */; };
 		6F6004F2210ED322009C4F03 /* YZFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600492210ED321009C4F03 /* YZFlowLayout.m */; };
@@ -60,7 +59,6 @@
 		6F600507210ED322009C4F03 /* XJImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6004C0210ED321009C4F03 /* XJImage.m */; };
 		6F600508210ED322009C4F03 /* myPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6004C4210ED321009C4F03 /* myPhotoCell.m */; };
 		6F600509210ED322009C4F03 /* WPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6004C5210ED321009C4F03 /* WPhotoViewController.m */; };
-		6F60050A210ED322009C4F03 /* NavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6004C6210ED321009C4F03 /* NavView.m */; };
 		6F60050B210ED322009C4F03 /* wphoto_select_no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F6004C8210ED321009C4F03 /* wphoto_select_no@2x.png */; };
 		6F60050C210ED322009C4F03 /* wphoto_select_yes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F6004C9210ED321009C4F03 /* wphoto_select_yes@2x.png */; };
 		6F60050D210ED322009C4F03 /* wphoto_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F6004CA210ED321009C4F03 /* wphoto_back@2x.png */; };
@@ -98,6 +96,12 @@
 		6F600562210ED992009C4F03 /* UNWebControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600560210ED991009C4F03 /* UNWebControl.m */; };
 		6F600568210EE723009C4F03 /* MainAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600567210EE723009C4F03 /* MainAPI.m */; };
 		6F60056A210F1188009C4F03 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6F600569210F1188009C4F03 /* README.md */; };
+		6FDA93DD21193E7500F071CA /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA93DC21193E7500F071CA /* MVPViewController.m */; };
+		6FDA93E621193F3300F071CA /* MVPPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA93E521193F3300F071CA /* MVPPresenter.m */; };
+		6FDA93EA2119410D00F071CA /* MVPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA93E92119410D00F071CA /* MVPTableViewCell.m */; };
+		6FDA93ED211943E500F071CA /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA93EC211943E500F071CA /* TestModel.m */; };
+		6FDA93F02119456C00F071CA /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA93EF2119456C00F071CA /* MVVMViewController.m */; };
+		6FDA93F321195BFB00F071CA /* WJTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA93F221195BFB00F071CA /* WJTableViewDataSource.m */; };
 		70628702EF0AD7FE5059497C /* libPods-iOSTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAE45FC1D0CD0CE94638868 /* libPods-iOSTool.a */; };
 /* End PBXBuildFile section */
 
@@ -175,8 +179,6 @@
 		6F600485210EC74E009C4F03 /* FirstPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
 		6F600487210EC75D009C4F03 /* UserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
 		6F600488210EC75D009C4F03 /* UserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
-		6F60048A210ED043009C4F03 /* SecViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecViewController.h; sourceTree = "<group>"; };
-		6F60048B210ED043009C4F03 /* SecViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecViewController.m; sourceTree = "<group>"; };
 		6F60048D210ED320009C4F03 /* TDFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDFileTool.m; sourceTree = "<group>"; };
 		6F600490210ED321009C4F03 /* YZDisplayTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayTitleLabel.m; sourceTree = "<group>"; };
 		6F600491210ED321009C4F03 /* YZDisplayViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewHeader.h; sourceTree = "<group>"; };
@@ -225,7 +227,6 @@
 		6F6004C2210ED321009C4F03 /* XJImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJImage.h; sourceTree = "<group>"; };
 		6F6004C4210ED321009C4F03 /* myPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myPhotoCell.m; sourceTree = "<group>"; };
 		6F6004C5210ED321009C4F03 /* WPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPhotoViewController.m; sourceTree = "<group>"; };
-		6F6004C6210ED321009C4F03 /* NavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavView.m; sourceTree = "<group>"; };
 		6F6004C8210ED321009C4F03 /* wphoto_select_no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wphoto_select_no@2x.png"; sourceTree = "<group>"; };
 		6F6004C9210ED321009C4F03 /* wphoto_select_yes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wphoto_select_yes@2x.png"; sourceTree = "<group>"; };
 		6F6004CA210ED321009C4F03 /* wphoto_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wphoto_back@2x.png"; sourceTree = "<group>"; };
@@ -233,7 +234,6 @@
 		6F6004CC210ED321009C4F03 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
 		6F6004CD210ED321009C4F03 /* myPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myPhotoCell.h; sourceTree = "<group>"; };
 		6F6004CE210ED321009C4F03 /* WPMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPMacros.h; sourceTree = "<group>"; };
-		6F6004CF210ED321009C4F03 /* NavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavView.h; sourceTree = "<group>"; };
 		6F6004D0210ED321009C4F03 /* WPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPhotoViewController.h; sourceTree = "<group>"; };
 		6F6004D1210ED321009C4F03 /* WPFunctionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPFunctionView.m; sourceTree = "<group>"; };
 		6F6004D2210ED321009C4F03 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
@@ -300,6 +300,19 @@
 		6F600566210EE723009C4F03 /* MainAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainAPI.h; sourceTree = "<group>"; };
 		6F600567210EE723009C4F03 /* MainAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainAPI.m; sourceTree = "<group>"; };
 		6F600569210F1188009C4F03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6FDA93DB21193E7500F071CA /* MVPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPViewController.h; sourceTree = "<group>"; };
+		6FDA93DC21193E7500F071CA /* MVPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPViewController.m; sourceTree = "<group>"; };
+		6FDA93E421193F3300F071CA /* MVPPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPPresenter.h; sourceTree = "<group>"; };
+		6FDA93E521193F3300F071CA /* MVPPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPPresenter.m; sourceTree = "<group>"; };
+		6FDA93E7211940CA00F071CA /* MVPPersenterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPPersenterDelegate.h; sourceTree = "<group>"; };
+		6FDA93E82119410D00F071CA /* MVPTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPTableViewCell.h; sourceTree = "<group>"; };
+		6FDA93E92119410D00F071CA /* MVPTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPTableViewCell.m; sourceTree = "<group>"; };
+		6FDA93EB211943E500F071CA /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		6FDA93EC211943E500F071CA /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		6FDA93EE2119456C00F071CA /* MVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
+		6FDA93EF2119456C00F071CA /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
+		6FDA93F121195BFB00F071CA /* WJTableViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJTableViewDataSource.h; sourceTree = "<group>"; };
+		6FDA93F221195BFB00F071CA /* WJTableViewDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJTableViewDataSource.m; sourceTree = "<group>"; };
 		A0358831D8C0699043F67F0E /* Pods-iOSTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTool/Pods-iOSTool.debug.xcconfig"; sourceTree = "<group>"; };
 		EA96A9EF60C4CF668EAB7A86 /* Pods-iOSTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTool/Pods-iOSTool.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -420,8 +433,12 @@
 				6F600485210EC74E009C4F03 /* FirstPageViewController.m */,
 				6F600487210EC75D009C4F03 /* UserViewController.h */,
 				6F600488210EC75D009C4F03 /* UserViewController.m */,
-				6F60048A210ED043009C4F03 /* SecViewController.h */,
-				6F60048B210ED043009C4F03 /* SecViewController.m */,
+				6FDA93D721193DB300F071CA /* MVVM */,
+				6FDA93D621193B2F00F071CA /* MVP */,
+				6FDA93EB211943E500F071CA /* TestModel.h */,
+				6FDA93EC211943E500F071CA /* TestModel.m */,
+				6FDA93F121195BFB00F071CA /* WJTableViewDataSource.h */,
+				6FDA93F221195BFB00F071CA /* WJTableViewDataSource.m */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -629,15 +646,13 @@
 		6F6004C3210ED321009C4F03 /* WPhoto */ = {
 			isa = PBXGroup;
 			children = (
-				6F6004C4210ED321009C4F03 /* myPhotoCell.m */,
 				6F6004C5210ED321009C4F03 /* WPhotoViewController.m */,
-				6F6004C6210ED321009C4F03 /* NavView.m */,
+				6F6004C4210ED321009C4F03 /* myPhotoCell.m */,
 				6F6004C7210ED321009C4F03 /* WPhotoImage */,
 				6F6004CB210ED321009C4F03 /* WPFunctionView.h */,
 				6F6004CC210ED321009C4F03 /* UIImage+fixOrientation.h */,
 				6F6004CD210ED321009C4F03 /* myPhotoCell.h */,
 				6F6004CE210ED321009C4F03 /* WPMacros.h */,
-				6F6004CF210ED321009C4F03 /* NavView.h */,
 				6F6004D0210ED321009C4F03 /* WPhotoViewController.h */,
 				6F6004D1210ED321009C4F03 /* WPFunctionView.m */,
 				6F6004D2210ED321009C4F03 /* UIImage+fixOrientation.m */,
@@ -738,6 +753,29 @@
 				6F600560210ED991009C4F03 /* UNWebControl.m */,
 			);
 			path = customView;
+			sourceTree = "<group>";
+		};
+		6FDA93D621193B2F00F071CA /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				6FDA93E7211940CA00F071CA /* MVPPersenterDelegate.h */,
+				6FDA93E421193F3300F071CA /* MVPPresenter.h */,
+				6FDA93E521193F3300F071CA /* MVPPresenter.m */,
+				6FDA93DB21193E7500F071CA /* MVPViewController.h */,
+				6FDA93DC21193E7500F071CA /* MVPViewController.m */,
+				6FDA93E82119410D00F071CA /* MVPTableViewCell.h */,
+				6FDA93E92119410D00F071CA /* MVPTableViewCell.m */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		6FDA93D721193DB300F071CA /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				6FDA93EE2119456C00F071CA /* MVVMViewController.h */,
+				6FDA93EF2119456C00F071CA /* MVVMViewController.m */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		DF6F3E958D9DBE09E212F070 /* Frameworks */ = {
@@ -985,6 +1023,7 @@
 				6F6004F9210ED322009C4F03 /* SDWaitingView.m in Sources */,
 				6F60047B210EB69F009C4F03 /* UIBarButtonItem+Extension.m in Sources */,
 				6F600475210EB69F009C4F03 /* UIButton+ImagePosition.m in Sources */,
+				6FDA93EA2119410D00F071CA /* MVPTableViewCell.m in Sources */,
 				6F600502210ED322009C4F03 /* UIView+STFrame.m in Sources */,
 				6F60050F210ED322009C4F03 /* UIImage+fixOrientation.m in Sources */,
 				6F600568210EE723009C4F03 /* MainAPI.m in Sources */,
@@ -999,6 +1038,7 @@
 				6F600562210ED992009C4F03 /* UNWebControl.m in Sources */,
 				6F6004FA210ED322009C4F03 /* SDBrowserImageView.m in Sources */,
 				6F60055F210ED7EA009C4F03 /* TDAlertView.m in Sources */,
+				6FDA93F02119456C00F071CA /* MVVMViewController.m in Sources */,
 				6F600422210EAD35009C4F03 /* main.m in Sources */,
 				6F6004F8210ED322009C4F03 /* SDPhotoBrowser.m in Sources */,
 				6F60047D210EB69F009C4F03 /* UIView+Toast.m in Sources */,
@@ -1009,14 +1049,14 @@
 				6F6004F0210ED322009C4F03 /* TDFileTool.m in Sources */,
 				6F600446210EADFA009C4F03 /* RootViewController.m in Sources */,
 				6F600512210ED322009C4F03 /* XC_labelCollectionViewCell.m in Sources */,
+				6FDA93DD21193E7500F071CA /* MVPViewController.m in Sources */,
 				6F600508210ED322009C4F03 /* myPhotoCell.m in Sources */,
 				6F60051E210ED5B2009C4F03 /* UNApplicationTool.m in Sources */,
 				6F600517210ED322009C4F03 /* UIView+XC_Frame.m in Sources */,
-				6F60048C210ED043009C4F03 /* SecViewController.m in Sources */,
 				6F600483210EC737009C4F03 /* BaseViewController.m in Sources */,
 				6F600486210EC74E009C4F03 /* FirstPageViewController.m in Sources */,
 				6F600476210EB69F009C4F03 /* UIView+tool.m in Sources */,
-				6F60050A210ED322009C4F03 /* NavView.m in Sources */,
+				6FDA93E621193F3300F071CA /* MVPPresenter.m in Sources */,
 				6F60055D210ED7EA009C4F03 /* UNLabelLabelBtn.m in Sources */,
 				6F6004FC210ED322009C4F03 /* UILabel+SizeToFit.m in Sources */,
 				6F600507210ED322009C4F03 /* XJImage.m in Sources */,
@@ -1031,11 +1071,13 @@
 				6F600533210ED74E009C4F03 /* MJChiBaoZiFooter.m in Sources */,
 				6F60051A210ED322009C4F03 /* UNAPIBase.m in Sources */,
 				6F60055E210ED7EA009C4F03 /* WJErrorWebVIew.m in Sources */,
+				6FDA93F321195BFB00F071CA /* WJTableViewDataSource.m in Sources */,
 				6F6004F4210ED322009C4F03 /* YZDisplayViewController.m in Sources */,
 				6F600449210EAE7F009C4F03 /* CustomNavigationController.m in Sources */,
 				6F600558210ED7EA009C4F03 /* WJImageTitleBtn.m in Sources */,
 				6F600504210ED322009C4F03 /* STCollectionView.m in Sources */,
 				6F0768022110232E009A9BEB /* NSArray+Ex.m in Sources */,
+				6FDA93ED211943E500F071CA /* TestModel.m in Sources */,
 				6F60050E210ED322009C4F03 /* WPFunctionView.m in Sources */,
 				6F600479210EB69F009C4F03 /* UIImage+tool.m in Sources */,
 				6F600536210ED74E009C4F03 /* MFTextField.m in Sources */,
@@ -1229,7 +1271,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = WJ.iOSTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1244,7 +1289,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = WJ.iOSTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1257,7 +1305,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSToolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = WJ.iOSToolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1271,7 +1323,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSToolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = WJ.iOSToolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1284,7 +1340,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSToolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = WJ.iOSToolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1297,7 +1357,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSToolUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = WJ.iOSToolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

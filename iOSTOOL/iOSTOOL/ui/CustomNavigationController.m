@@ -16,15 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[UINavigationBar appearance] setTintColor: [UIColor blackColor]];
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:kColor(@"#000000"), NSFontAttributeName:kFontNomal(18)}];
+    
+    //    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
+    //    [UINavigationBar appearance].backIndicatorImage = [UIImage imageNamed:@"return"];
+    //    [UINavigationBar appearance].backIndicatorTransitionMaskImage = [UIImage imageNamed:@"return"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 /*
 #pragma mark - Navigation
 

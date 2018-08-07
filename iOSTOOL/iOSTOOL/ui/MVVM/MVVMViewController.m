@@ -1,22 +1,23 @@
 //
-//  SecViewController.m
+//  MVVMViewController.m
 //  iOSTool
 //
-//  Created by jack wei on 2018/7/30.
+//  Created by jack wei on 2018/8/7.
 //  Copyright © 2018年 jack wei. All rights reserved.
 //
 
-#import "SecViewController.h"
+#import "MVVMViewController.h"
 
-@interface SecViewController ()
+@interface MVVMViewController ()
 
 @end
 
-@implementation SecViewController
+@implementation MVVMViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title=@"详情";
+    self.navigationItem.title=@"MVVM";
+
 }
 
 - (void)didReceiveMemoryWarning {

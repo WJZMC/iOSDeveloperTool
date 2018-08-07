@@ -31,6 +31,7 @@
 #import "UITabBarItem+DKSBadge.h"
 
 #import "YYText.h"
+#import "YYModel.h"
 #import "Masonry.h"
 #import "TPKeyboardAvoidingCollectionView.h"
 #import "TPKeyboardAvoidingScrollView.h"

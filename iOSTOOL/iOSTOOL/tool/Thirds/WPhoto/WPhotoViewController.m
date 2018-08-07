@@ -353,19 +353,6 @@
     }
 }
 
-#pragma mark createNav
--(void)makeNav {
-    NavView *navVC = [[NavView alloc] init];
-    navVC.frame = self.view.bounds;
-    [navVC setNavViewBack:^{
-        [self btnClickBack];
-    }];
-    [navVC setQuitChooseBack:^{
-        [self quitChoose];
-    }];
-    [self.view addSubview:navVC];
-}
-
 #pragma mark 取消全部选择
 -(void)quitChoose{
     if (_ado_collectionView&&_chooseArray&&_chooseCellArray) {

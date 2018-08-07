@@ -11,7 +11,7 @@
 #import "FirstPageViewController.h"
 #import "UserViewController.h"
 #import "config.h"
-@interface RootViewController ()
+@interface RootViewController ()<UITabBarControllerDelegate>
 
 @end
 
@@ -20,8 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.delegate=self;
+    
+    self.navigationItem.title=@"首页";
+    self.tabBar.backgroundColor=[UIColor whiteColor];
+    
     FirstPageViewController *frist=[[FirstPageViewController alloc]init];
-    CustomNavigationController *customHomeNav=[[CustomNavigationController alloc]initWithRootViewController:frist];
     [self setTabBarItem:frist.tabBarItem
                   title:@"首页"
           titleFontName:kFontNomal(13)
@@ -31,16 +35,15 @@
        normalTitleColor:[UIColor grayColor]];
     
     UserViewController *user=[[UserViewController alloc]init];
-    CustomNavigationController *customUserNav=[[CustomNavigationController alloc]initWithRootViewController:user];
     [self setTabBarItem:user.tabBarItem
-                  title:@"首页"
+                  title:@"我的"
           titleFontName:kFontNomal(13)
           selectedImage:@"wode-on"
      selectedTitleColor:kMainBlueColor
             normalImage:@"wode"
        normalTitleColor:[UIColor grayColor]];
     
-    [self setViewControllers:@[customHomeNav,customUserNav] animated:YES];
+    [self setViewControllers:@[frist,user] animated:YES];
 }
 - (void)setTabBarItem:(UITabBarItem *)tabbarItem
                 title:(NSString *)title
@@ -60,6 +63,11 @@
     // 选中字体颜色
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:selectColor,NSFontAttributeName:font} forState:UIControlStateSelected];
 }
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    tabBarController.navigationItem.title=viewController.tabBarItem.title;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -10,7 +10,6 @@
 #import "UIImage+fixOrientation.h"
 #import "WPMacros.h"
 #import "WPFunctionView.h"
-#import "NavView.h"
 #import "BaseViewController.h"
 @interface WPhotoViewController : BaseViewController
 

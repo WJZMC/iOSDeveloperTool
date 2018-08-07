@@ -18,6 +18,8 @@
     [super viewDidLoad];
     self.view.backgroundColor=kBGColor;
     
+    [self customNavLeft];
+    
     if (@available(iOS 7.0, *)) {
         if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
             self.edgesForExtendedLayout = UIRectEdgeNone;
@@ -106,6 +108,21 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)customNavLeft
+{
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backBtn setFrame:CGRectMake(0, 0, 44, 44)];
+    [backBtn addTarget:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIImageView *img = [[UIImageView alloc]init];
+    [img setFrame:CGRectMake(0, 22-10, 19/2.0, 17)];
+    [img setImage:[UIImage imageNamed:@"return"]];
+    [backBtn addSubview:img];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:backBtn];
+}
+-(void)backAction:(UIButton*)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*
