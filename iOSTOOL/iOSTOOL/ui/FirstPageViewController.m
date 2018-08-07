@@ -50,7 +50,7 @@
         _MVVM=[[UIButton alloc]init];
         [_MVVM setTitle:@"MVVM" forState:UIControlStateNormal];
         [_MVVM setTitleColor:kColor(@"000000") forState:UIControlStateNormal];
-        [_MVVM addTarget:self action:@selector(mvpAction:) forControlEvents:UIControlEventTouchUpInside];
+        [_MVVM addTarget:self action:@selector(mvvmAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _MVVM;
 }

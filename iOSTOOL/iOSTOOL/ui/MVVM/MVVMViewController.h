@@ -6,8 +6,8 @@
 //  Copyright © 2018年 jack wei. All rights reserved.
 //
 
-#import "RootViewController.h"
+#import "BaseViewController.h"
 
-@interface MVVMViewController : RootViewController
+@interface MVVMViewController : BaseViewController
 
 @end

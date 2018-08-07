@@ -39,26 +39,30 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark -----------------MVPPersenterDelegate
+
 -(void)reloadData:(NSArray *)dataArray
 {
     self.dataSource.dataArray=dataArray;
     [self.tableView reloadData];
 }
 
-
+#pragma mark ---------------lazy
 -(UITableView*)tableView
 {
     if (!_tableView) {
+        __weak typeof (self) weakSelf=self;
         _tableView=[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
         [_tableView registerClass:[MVPTableViewCell class] forCellReuseIdentifier:@"MVPCell"];
         _dataSource=[[WJTableViewDataSource alloc]initWithTable:_tableView WithReuseIdentifier:@"MVPCell" WithBlock:^(MVPTableViewCell* cell, TestModel* model, NSInteger indexPathRow) {
             cell.label.text=[NSString stringWithFormat:@"%ld",model.defaultNum];
             cell.indexPathRow=indexPathRow;
-            cell.delegate=self.presenter;
+            cell.delegate=weakSelf.presenter;
         }];
     }
     return _tableView;
 }
+
 -(MVPPresenter*)presenter
 {
     if (!_presenter) {

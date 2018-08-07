@@ -102,6 +102,8 @@
 		6FDA93ED211943E500F071CA /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA93EC211943E500F071CA /* TestModel.m */; };
 		6FDA93F02119456C00F071CA /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA93EF2119456C00F071CA /* MVVMViewController.m */; };
 		6FDA93F321195BFB00F071CA /* WJTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA93F221195BFB00F071CA /* WJTableViewDataSource.m */; };
+		6FDA93F6211984E300F071CA /* MVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA93F5211984E300F071CA /* MVVMViewModel.m */; };
+		6FDA93F9211986EE00F071CA /* MVVMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA93F8211986EE00F071CA /* MVVMTableViewCell.m */; };
 		70628702EF0AD7FE5059497C /* libPods-iOSTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAE45FC1D0CD0CE94638868 /* libPods-iOSTool.a */; };
 /* End PBXBuildFile section */
 
@@ -313,6 +315,10 @@
 		6FDA93EF2119456C00F071CA /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
 		6FDA93F121195BFB00F071CA /* WJTableViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJTableViewDataSource.h; sourceTree = "<group>"; };
 		6FDA93F221195BFB00F071CA /* WJTableViewDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJTableViewDataSource.m; sourceTree = "<group>"; };
+		6FDA93F4211984E300F071CA /* MVVMViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewModel.h; sourceTree = "<group>"; };
+		6FDA93F5211984E300F071CA /* MVVMViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewModel.m; sourceTree = "<group>"; };
+		6FDA93F7211986EE00F071CA /* MVVMTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMTableViewCell.h; sourceTree = "<group>"; };
+		6FDA93F8211986EE00F071CA /* MVVMTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTableViewCell.m; sourceTree = "<group>"; };
 		A0358831D8C0699043F67F0E /* Pods-iOSTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTool/Pods-iOSTool.debug.xcconfig"; sourceTree = "<group>"; };
 		EA96A9EF60C4CF668EAB7A86 /* Pods-iOSTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTool/Pods-iOSTool.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -774,6 +780,10 @@
 			children = (
 				6FDA93EE2119456C00F071CA /* MVVMViewController.h */,
 				6FDA93EF2119456C00F071CA /* MVVMViewController.m */,
+				6FDA93F4211984E300F071CA /* MVVMViewModel.h */,
+				6FDA93F5211984E300F071CA /* MVVMViewModel.m */,
+				6FDA93F7211986EE00F071CA /* MVVMTableViewCell.h */,
+				6FDA93F8211986EE00F071CA /* MVVMTableViewCell.m */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -1035,7 +1045,9 @@
 				6F600503210ED322009C4F03 /* CustomSegmentControl.m in Sources */,
 				6F6004FF210ED322009C4F03 /* WKWebViewController.m in Sources */,
 				6F6004F6210ED322009C4F03 /* UITabBar+DKSTabBar.m in Sources */,
+				6FDA93F6211984E300F071CA /* MVVMViewModel.m in Sources */,
 				6F600562210ED992009C4F03 /* UNWebControl.m in Sources */,
+				6FDA93F9211986EE00F071CA /* MVVMTableViewCell.m in Sources */,
 				6F6004FA210ED322009C4F03 /* SDBrowserImageView.m in Sources */,
 				6F60055F210ED7EA009C4F03 /* TDAlertView.m in Sources */,
 				6FDA93F02119456C00F071CA /* MVVMViewController.m in Sources */,

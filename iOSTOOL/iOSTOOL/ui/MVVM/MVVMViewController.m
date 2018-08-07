@@ -7,9 +7,14 @@
 //
 
 #import "MVVMViewController.h"
-
+#import "MVVMTableViewCell.h"
+#import "WJTableViewDataSource.h"
+#import "TestModel.h"
+#import "MVVMViewModel.h"
 @interface MVVMViewController ()
-
+@property(nonatomic,strong)UITableView *tableView;
+@property(nonatomic,strong)WJTableViewDataSource *dataSource;
+@property(nonatomic,strong)MVVMViewModel *vm;
 @end
 
 @implementation MVVMViewController
@@ -18,6 +23,27 @@
     [super viewDidLoad];
     self.navigationItem.title=@"MVVM";
 
+    [self.view addSubview:self.tableView];
+    __weak typeof(self) weakSelf=self;
+    self.vm=[[MVVMViewModel alloc]initWithSucessBlcok:^(NSArray* data) {
+        weakSelf.dataSource.dataArray=data;
+        [weakSelf.tableView reloadData];
+    }];
+}
+#pragma mark ---------------lazy
+-(UITableView*)tableView
+{
+    if (!_tableView) {
+        __weak typeof(self) weakSelf=self;
+        _tableView=[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        [_tableView registerClass:[MVVMTableViewCell class] forCellReuseIdentifier:@"MVVMTableViewCell"];
+        _dataSource=[[WJTableViewDataSource alloc]initWithTable:_tableView WithReuseIdentifier:@"MVVMTableViewCell" WithBlock:^(MVVMTableViewCell* cell, TestModel* model, NSInteger indexPathRow) {
+            cell.label.text=[NSString stringWithFormat:@"%ld",model.defaultNum];
+            cell.vm=weakSelf.vm;
+            cell.indexPathRow=indexPathRow;
+        }];
+    }
+    return _tableView;
 }
 
 - (void)didReceiveMemoryWarning {

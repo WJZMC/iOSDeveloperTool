@@ -14,17 +14,12 @@
 @implementation WJTableViewDataSource
 -(instancetype)initWithTable:(UITableView*)table WithReuseIdentifier:(NSString *)identifier WithBlock:(WJTableViewDataSourceBlock)block{
     if (self=[super init]) {
-        _cBlock=block;
+        self.cBlock=block;
         _identifity=identifier;
         table.dataSource=self;
         table.delegate=self;
     }
     return self;
-}
--(void)setCBlock:(WJTableViewDataSourceBlock)cBlock
-{
-    __weak WJTableViewDataSourceBlock block=cBlock;
-    _cBlock=block;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
