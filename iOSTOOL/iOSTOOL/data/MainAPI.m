@@ -13,14 +13,14 @@
  *  首页列表
 
  */
-+ (void)getHomeChannelColumnListDataWithParameters:(id)parameters WithAnimation:(BOOL)isShowAnimation Success:(UNMainApiResultSucessBlock)success Failed:(UNAPIResultFailedBlock)failure
++ (void)getHomeChannelColumnListDataWithParameters:(id)parameters WithAnimation:(BOOL)isShowAnimation Success:(UNMainApiResultSucessBlock)success Failed:(WJAPIResultFailedBlock)failure
 {
-    [MainAPI postWithURL:@"/test/list" parameters:parameters WithAnimation:isShowAnimation WithShowLogin:NO success:^(id result, NSString *msg)  {
+    [MainAPI postWithURL:@"全连接" parameters:parameters WithAnimation:isShowAnimation WithShowLogin:NO success:^(id result, NSString *msg)  {
         if ([result isKindOfClass:[NSArray class]]) {
             NSArray *array=result;
             NSMutableArray *resultArray=[NSMutableArray array];
             for (int i=0; i<array.count; i++) {
-//                UNDynamicListBaseModel *mt=[UNDynamicListBaseModel mj_objectWithKeyValues:array[i]];
+//                model *mt=[model mj_objectWithKeyValues:array[i]];
 //                [resultArray addObject:mt];
             }
             success(resultArray);

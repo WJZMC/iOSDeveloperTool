@@ -74,8 +74,6 @@
 		6F600517210ED322009C4F03 /* UIView+XC_Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6004E2210ED321009C4F03 /* UIView+XC_Frame.m */; };
 		6F600518210ED322009C4F03 /* UIButton+CGMCilckBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6004E6210ED321009C4F03 /* UIButton+CGMCilckBtn.m */; };
 		6F600519210ED322009C4F03 /* XC_EqualSpaceCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6004E7210ED321009C4F03 /* XC_EqualSpaceCollectionViewFlowLayout.m */; };
-		6F60051A210ED322009C4F03 /* UNAPIBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6004EB210ED321009C4F03 /* UNAPIBase.m */; };
-		6F60051B210ED322009C4F03 /* UNSignTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6004EE210ED321009C4F03 /* UNSignTool.m */; };
 		6F60051E210ED5B2009C4F03 /* UNApplicationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F60051D210ED5B2009C4F03 /* UNApplicationTool.m */; };
 		6F600533210ED74E009C4F03 /* MJChiBaoZiFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600520210ED745009C4F03 /* MJChiBaoZiFooter.m */; };
 		6F600534210ED74E009C4F03 /* MJChiBaoZiFooter2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600521210ED746009C4F03 /* MJChiBaoZiFooter2.m */; };
@@ -91,7 +89,6 @@
 		6F600558210ED7EA009C4F03 /* WJImageTitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600542210ED7EA009C4F03 /* WJImageTitleBtn.m */; };
 		6F60055C210ED7EA009C4F03 /* UNActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F60054A210ED7EA009C4F03 /* UNActionSheet.m */; };
 		6F60055D210ED7EA009C4F03 /* UNLabelLabelBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F60054D210ED7EA009C4F03 /* UNLabelLabelBtn.m */; };
-		6F60055E210ED7EA009C4F03 /* WJErrorWebVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600551210ED7EA009C4F03 /* WJErrorWebVIew.m */; };
 		6F60055F210ED7EA009C4F03 /* TDAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600554210ED7EA009C4F03 /* TDAlertView.m */; };
 		6F600562210ED992009C4F03 /* UNWebControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600560210ED991009C4F03 /* UNWebControl.m */; };
 		6F600568210EE723009C4F03 /* MainAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F600567210EE723009C4F03 /* MainAPI.m */; };
@@ -258,10 +255,6 @@
 		6F6004E7210ED321009C4F03 /* XC_EqualSpaceCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XC_EqualSpaceCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		6F6004E8210ED321009C4F03 /* XC_label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XC_label.h; sourceTree = "<group>"; };
 		6F6004E9210ED321009C4F03 /* Label_btn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label_btn.h; sourceTree = "<group>"; };
-		6F6004EB210ED321009C4F03 /* UNAPIBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNAPIBase.m; sourceTree = "<group>"; };
-		6F6004EC210ED321009C4F03 /* UNSignTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNSignTool.h; sourceTree = "<group>"; };
-		6F6004ED210ED321009C4F03 /* UNAPIBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNAPIBase.h; sourceTree = "<group>"; };
-		6F6004EE210ED321009C4F03 /* UNSignTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNSignTool.m; sourceTree = "<group>"; };
 		6F6004EF210ED322009C4F03 /* TDFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDFileTool.h; sourceTree = "<group>"; };
 		6F60051C210ED5B1009C4F03 /* UNApplicationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNApplicationTool.h; sourceTree = "<group>"; };
 		6F60051D210ED5B2009C4F03 /* UNApplicationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNApplicationTool.m; sourceTree = "<group>"; };
@@ -287,13 +280,11 @@
 		6F600541210ED7EA009C4F03 /* WJCircleBorderImageVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCircleBorderImageVIew.m; sourceTree = "<group>"; };
 		6F600542210ED7EA009C4F03 /* WJImageTitleBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJImageTitleBtn.m; sourceTree = "<group>"; };
 		6F60054A210ED7EA009C4F03 /* UNActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNActionSheet.m; sourceTree = "<group>"; };
-		6F60054B210ED7EA009C4F03 /* WJErrorWebVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJErrorWebVIew.h; sourceTree = "<group>"; };
 		6F60054C210ED7EA009C4F03 /* TDAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDAlertView.h; sourceTree = "<group>"; };
 		6F60054D210ED7EA009C4F03 /* UNLabelLabelBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNLabelLabelBtn.m; sourceTree = "<group>"; };
 		6F60054E210ED7EA009C4F03 /* UNNoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNNoDataView.h; sourceTree = "<group>"; };
 		6F60054F210ED7EA009C4F03 /* WJCircleBorderImageVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCircleBorderImageVIew.h; sourceTree = "<group>"; };
 		6F600550210ED7EA009C4F03 /* UNWebContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNWebContentView.h; sourceTree = "<group>"; };
-		6F600551210ED7EA009C4F03 /* WJErrorWebVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJErrorWebVIew.m; sourceTree = "<group>"; };
 		6F600552210ED7EA009C4F03 /* UNActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNActionSheet.h; sourceTree = "<group>"; };
 		6F600553210ED7EA009C4F03 /* WJImageTitleBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJImageTitleBtn.h; sourceTree = "<group>"; };
 		6F600554210ED7EA009C4F03 /* TDAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDAlertView.m; sourceTree = "<group>"; };
@@ -452,7 +443,6 @@
 		6F60044D210EB14D009C4F03 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				6F6004EA210ED321009C4F03 /* NetWork */,
 				6F600566210EE723009C4F03 /* MainAPI.h */,
 				6F600567210EE723009C4F03 /* MainAPI.m */,
 			);
@@ -725,17 +715,6 @@
 			path = XC_LabelExtention;
 			sourceTree = "<group>";
 		};
-		6F6004EA210ED321009C4F03 /* NetWork */ = {
-			isa = PBXGroup;
-			children = (
-				6F6004ED210ED321009C4F03 /* UNAPIBase.h */,
-				6F6004EB210ED321009C4F03 /* UNAPIBase.m */,
-				6F6004EC210ED321009C4F03 /* UNSignTool.h */,
-				6F6004EE210ED321009C4F03 /* UNSignTool.m */,
-			);
-			path = NetWork;
-			sourceTree = "<group>";
-		};
 		6F60053D210ED7EA009C4F03 /* customView */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,8 +730,6 @@
 				6F600554210ED7EA009C4F03 /* TDAlertView.m */,
 				6F600550210ED7EA009C4F03 /* UNWebContentView.h */,
 				6F600540210ED7EA009C4F03 /* UNWebContentView.m */,
-				6F60054B210ED7EA009C4F03 /* WJErrorWebVIew.h */,
-				6F600551210ED7EA009C4F03 /* WJErrorWebVIew.m */,
 				6F600553210ED7EA009C4F03 /* WJImageTitleBtn.h */,
 				6F600542210ED7EA009C4F03 /* WJImageTitleBtn.m */,
 				6F600561210ED992009C4F03 /* UNWebControl.h */,
@@ -1027,7 +1004,6 @@
 				6F60047C210EB69F009C4F03 /* UINavigationBar+Awesome.m in Sources */,
 				6F60047E210EB69F009C4F03 /* UIColor+Hex.m in Sources */,
 				6F600518210ED322009C4F03 /* UIButton+CGMCilckBtn.m in Sources */,
-				6F60051B210ED322009C4F03 /* UNSignTool.m in Sources */,
 				6F600506210ED322009C4F03 /* XJAlbum.m in Sources */,
 				6F60053B210ED74E009C4F03 /* KeyBorderState.m in Sources */,
 				6F6004F9210ED322009C4F03 /* SDWaitingView.m in Sources */,
@@ -1081,8 +1057,6 @@
 				6F6004F7210ED322009C4F03 /* UIView+DKSBadge.m in Sources */,
 				6F600501210ED322009C4F03 /* SwipeTableView.m in Sources */,
 				6F600533210ED74E009C4F03 /* MJChiBaoZiFooter.m in Sources */,
-				6F60051A210ED322009C4F03 /* UNAPIBase.m in Sources */,
-				6F60055E210ED7EA009C4F03 /* WJErrorWebVIew.m in Sources */,
 				6FDA93F321195BFB00F071CA /* WJTableViewDataSource.m in Sources */,
 				6F6004F4210ED322009C4F03 /* YZDisplayViewController.m in Sources */,
 				6F600449210EAE7F009C4F03 /* CustomNavigationController.m in Sources */,

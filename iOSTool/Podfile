@@ -21,6 +21,7 @@ pod 'PleaseBaoMe'
 pod 'Qiniu'
 pod 'ZFPlayer'
 pod 'ZFDownload'
+pod 'WJRequestTool'
 
 pod 'YYModel' # — 高性能的 iOS JSON 模型框架。https://github.com/ibireme/YYImage
 pod 'YYCache' # — 高性能的 iOS 缓存框架。https://github.com/ibireme/YYCache
